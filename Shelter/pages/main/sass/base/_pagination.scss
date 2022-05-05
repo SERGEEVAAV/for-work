@@ -1,0 +1,38 @@
+.btn {
+    width: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 52px;
+    height: 52px;
+    font-size: 20px;
+    cursor: pointer;
+    background: $color-pagination;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: none;
+    
+    @include media-mobilesmall {
+        
+       gap: 60px;
+    }
+}
+
+#btn-right {
+    margin-left: 53px;
+    @include media-tablet {
+        margin-left: 12px;
+    }
+    
+}
+
+#btn-left {
+    margin-right: 53px;
+    @include media-tablet {
+        margin-right: 12px;
+    }
+   @include media-mobilesmall {
+       
+   }
+}
+
