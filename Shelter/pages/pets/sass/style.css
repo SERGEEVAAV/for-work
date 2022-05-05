@@ -542,7 +542,7 @@ section, main, footer, header, article {
 @media (max-width: 320px) {
   .hamburger__navigation {
     display: inline-block;
-    z-index: 2;
+    z-index: 5;
   }
 }
 .hamburger__navigation:before {
@@ -881,23 +881,24 @@ section, main, footer, header, article {
 }
 
 .layout-4-column {
-  max-width: 1200px;
+  width: 120%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
   row-gap: 30px;
 }
 @media (max-width: 769px) {
   .layout-4-column {
-    max-width: 580px;
+    width: 58rem;
     margin: 0 64px;
     margin-bottom: 40px;
   }
 }
 @media (max-width: 320px) {
   .layout-4-column {
-    max-width: 270px;
+    width: 27%;
     margin: 0 15px;
   }
 }
