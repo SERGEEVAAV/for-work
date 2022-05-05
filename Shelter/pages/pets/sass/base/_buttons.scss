@@ -1,0 +1,83 @@
+.button_bordered {
+    width: 187px;
+    height: 52px;
+    margin-left: 41px;
+    border: 2px solid $color-border;
+    box-sizing: border-box;
+    border-radius: 100px;
+    @include font ($size: 1.7rem, $height: 130%, $weight: 400);
+    margin-bottom: 30px;
+    letter-spacing: 0.06em;
+   
+}
+
+.pagination__button {
+    width: 340px;
+    height: 52px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    @include media-tablet{
+        margin-top: 40px;
+        margin-bottom: 76px;
+        
+    }
+    @include media-mobilesmall {
+        width: 300px;
+        height: 52px;
+        padding-top: 42px;
+        margin: 0;
+        
+    }
+}
+
+.button__normal {   
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;   
+    border: 2px solid $color-pagination;
+    box-sizing: border-box;
+    border-radius: 100px;
+    @include font ($size: 2.0rem, $height: 115%, $weight: 400);
+    &:hover {
+        cursor: pointer;
+        background:$color-hover;
+        border: none;
+    }
+    
+}
+.button__active {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: $color-pagination;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: none;
+    @include font ($size: 2.0rem, $height: 115%, $weight: 400);
+    &:hover {
+        cursor: pointer;
+        
+    }
+}
+
+.button__inactive {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;   
+    border: 2px solid $color-inactive;
+    box-sizing: border-box;
+    border-radius: 100px;
+    @include font ($size: 2.0rem, $height:115%, $weight:400);
+    color: $color-inactive;
+}

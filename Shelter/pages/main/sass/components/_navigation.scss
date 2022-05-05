@@ -1,0 +1,87 @@
+.navigation__list {
+    display: flex; 
+    list-style: none;
+    @include media-tablet {
+        display: block;
+        max-width: 500px;
+        height: 327px;
+        margin: 0;
+        text-align: center;
+    }
+    @include media-mobilesmall {
+        display: block;
+        height: 327px;
+        margin: 0;
+        text-align: center;
+        
+    }
+}
+.navigation__link {
+    padding-left: 35px;
+    color: $color-link;
+    &:hover {
+        cursor: pointer;
+        color:$color-linkhover;
+    }
+    a.active {
+        color: $color-link;
+        text-decoration: underline 3px;
+        text-decoration-color: $color-line;
+                
+        &:hover {
+            text-decoration: none;
+            
+        }
+    }
+    @include media-mobilesmall {
+        margin-bottom: 40px;
+        // font-size: 3.2rem;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+    }
+}
+.navigation__link a {
+    text-decoration: none;
+    color: $color-link;
+    &:hover {
+        cursor: pointer;
+        color:$color-linkhover;
+    }
+}
+
+.header__navigation {
+    @include media-tablet {
+        min-width: 320px;
+        background-image: url("./../../../assets/fonts/background-mobile.png");
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;      
+        padding: 248px 38px 248px 39px;
+        transition: all 0.3s ease 0s;
+        transform: translate(-400%, 0);
+    }
+    @include media-mobilesmall {
+        max-width: 320px;
+        background-image: url("./../../../assets/fonts/background-mobile.png");
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;      
+        padding: 248px 38px 248px 39px;
+        transition: all 0.3s ease 0s;
+        transform: translate(-200%, 0);
+    }
+}
+.header__navigation._active {
+    @include media-tablet {
+        transform: translate(0, 0);
+    }
+    @include media-mobilesmall {
+        transform: translate(0, 0);
+    }
+    
+}
