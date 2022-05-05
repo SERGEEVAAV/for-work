@@ -53,19 +53,20 @@
 
 }
 .layout-4-column {
-    max-width: 1200px;
+    width: 120%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
     row-gap: 30px;
     @include media-tablet{
-        max-width: 580px;
+        width: 58.0rem;
         margin: 0 64px;
         margin-bottom: 40px;
     }
     @include media-mobilesmall {
-        max-width: 270px;
+        width: 27.0%;
         margin: 0 15px;
       
     }

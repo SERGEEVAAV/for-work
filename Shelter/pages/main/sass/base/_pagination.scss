@@ -12,10 +12,7 @@
     border-radius: 100px;
     border: none;
     
-    @include media-mobilesmall {
-        
-       gap: 60px;
-    }
+  
 }
 
 #btn-right {
@@ -23,7 +20,9 @@
     @include media-tablet {
         margin-left: 12px;
     }
+    @include media-mobilesmall {
     
+    }
 }
 
 #btn-left {
@@ -32,7 +31,8 @@
         margin-right: 12px;
     }
    @include media-mobilesmall {
-       
+        margin-left: 43px;
+        margin-right: 80px;
    }
 }
 

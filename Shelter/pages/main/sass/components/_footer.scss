@@ -101,7 +101,8 @@ a{
 .footer__image {
     @include media-tablet{     
         margin-top: 65px;
-        padding-left: 204px;
+        text-align: center;
+        // padding-left: 204px;
         padding-bottom: 0;
     }
     @include media-mobilesmall {
@@ -115,6 +116,7 @@ a{
         max-width: 300px;
     }
     @include media-mobilesmall {
+        display: block;
         max-width: 260px;
     }
 }
