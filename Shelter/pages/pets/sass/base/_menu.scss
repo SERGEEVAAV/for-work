@@ -1,0 +1,19 @@
+.menu {
+    position: relative;
+    background-color: $color-light;
+    max-width: 320px;
+    height: 50%;
+    top: 0;
+    right: 0;
+    // overflow: auto; нужно для крестика внутри модалки
+   
+    // @extend %custom-scroll;
+
+    @include media-tablet {
+        width: 90%;
+    }
+
+
+}
+
+

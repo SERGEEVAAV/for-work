@@ -1,0 +1,120 @@
+#footer {
+    background-size: 100%;
+    background-image: url("./../../../assets/fonts/footer-gradient-background.png");
+    @include media-tablet {
+        background-image: url("./../../../assets/fonts/footer-gradient-background.png") no-repeat;
+        background-size: cover;   
+    }  
+    @include media-mobilesmall {
+        background-image: url("./../../../assets/fonts/footer-gradient-background.png") no-repeat;
+        background-size: cover;       
+    }
+
+    
+}
+
+.footer__wrapper {
+    max-width: 1200px;
+    padding: 0 40px;
+    padding-top: 40px;
+    @include media-tablet {
+        width: 708px;
+    }
+    @include media-mobile {
+        width: 300px;
+        padding: 0 10px;
+        padding-top: 30px;
+    }
+    @include media-mobilesmall {
+        width: 300px;
+        padding: 0 10px;
+        padding-top: 30px;
+        
+    }
+}
+
+.footer__content {
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include media-tablet {
+        width: 100%;
+        
+    }
+    @include media-mobilesmall {
+        width: 100%;
+        
+    }
+}
+
+.icon__contact {
+    width: 278px;
+    height: 234px;
+}
+.contact__title {
+    width: 279px;
+    height: 90px;
+    color: $color-light;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    letter-spacing: 0.06em;
+    @include media-mobilesmall {
+        text-align: center;
+        margin: 0;
+    }
+}
+.contact__text {
+    color: $color-contact;
+    margin: 0;
+    padding-left: 20px;
+    letter-spacing: 0.06em;
+    
+}
+
+.icon__gps {
+    width: 302px;   
+    height: 234px;
+}
+
+.icon__location {
+    display: flex;
+    margin-bottom: 32px;
+    text-decoration: none;
+    
+}
+.footer__icon {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer__image {
+    @include media-tablet{
+        margin-top: 65px;
+        margin-left: 204px;
+    }
+    @include media-mobile {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    @include media-mobilesmall {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
+.puppy__image {
+    @include media-tablet {
+        display: block;
+        width: 300px;
+    }
+    @include media-mobilesmall {
+        display: block;
+        width: 260px;
+        
+    }
+}

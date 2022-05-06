@@ -1,0 +1,123 @@
+.promo {
+    
+    padding: 60px 40px 0 40px;
+    @include media-tablet {
+        
+        // padding: 60px 100px 0 99px;
+        
+       
+    }
+    @include media-mobilesmall {
+      
+        padding: 0 10px;
+        padding-top: 60px;
+    }
+}
+
+.promo__wrapper {
+    max-width: 1200px;
+   
+    
+    @include media-tablet {
+        
+        max-width: 569px;
+    }
+    @include media-mobilesmall {
+       
+        max-width: 300px;
+        
+    }
+    
+}
+.promo__blok {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    @include media-tablet {
+        display: flex;
+        flex-direction: column; 
+    }
+    @include media-mobilesmall {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.promo__content {
+    // width: 38.3%;
+    max-width: 460px;
+    // margin-right: 42px;
+    @include media-tablet {
+        max-width: 460px;
+       
+        // max-width: 59.8%;
+        margin-bottom: 100px;
+    }
+    @include media-mobilesmall {
+        // width: 93.75%;
+        max-width: 300px;
+        margin-bottom: 105px;
+        // margin-right: 0;
+       
+    }
+}
+
+.promo__title{
+    max-width: 310px;
+    color: $color-light;
+    // text-align: center;
+    // margin: 0;
+    @include media-mobilesmall {
+        max-width: 300px;
+        // margin: 0 auto;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+   
+}
+
+.promo__text {
+    max-width: 460px;
+    @extend %font-add;
+    padding: 42px 0;
+    // margin: 0;
+    color: $color-promo;
+    @include media-mobilesmall {
+        max-width: 300px;
+        text-align: center;
+        // margin: 0;
+    }
+}
+
+.promo__image { 
+    // padding-right: 40px;
+    padding-left: 42px;
+   
+    @include media-tablet {
+        padding-left: 70px;
+        padding-right: 0px;
+       
+    }
+    @include media-mobilesmall {
+        padding-left: 40px;
+    }
+}
+
+
+.puppy__image {
+    display: block;
+    max-width: 698px;
+    width: 100%;
+    
+    @include media-tablet {
+        width: 100%;
+        max-width: 569px;
+    
+    }
+    @include media-mobilesmall {
+       max-width: 260px;
+        
+        
+    }
+}
+

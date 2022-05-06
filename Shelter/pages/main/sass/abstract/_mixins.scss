@@ -1,0 +1,37 @@
+@mixin font ($size, $height, $weight, $style: normal) {
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin media-laptop {
+    @media (max-width: $content-width) { @content; }
+}
+@mixin media-tablet {
+    @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-big-width) { @content; }
+}
+@mixin media-mobilesmall {
+    @media (max-width: $mobile-small-width)  { @content; }
+}
+
+@media screen and (max-width: 500px) {
+    
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .hamburger {
+        display: inline-block;
+        z-index: 5;
+    }
+    .about__title {
+        @include font ($size: 2.5rem, $height: 130%, $weight: 400);
+    }
+
+    h4 {
+        @include font ($size: 1.5rem, $height: 110%, $weight: 400);
+    }
+}

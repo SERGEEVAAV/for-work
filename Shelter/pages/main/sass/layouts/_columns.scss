@@ -1,0 +1,16 @@
+
+ .layout-3-colum {
+    position: absolute;
+    width: 1200px;
+    height: 435px;
+    display: flex;
+    align-items: center;
+    @include media-tablet {
+       width: 708px;
+    }
+    @include media-mobilesmall {
+       width: 270px;
+       display: flex;
+       align-items: flex-end;
+    }
+ }

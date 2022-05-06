@@ -1,0 +1,122 @@
+#footer {
+    background-size: 100%;
+    background-image: url("./../../../assets/fonts/footer-gradient-background.png");
+    @include media-tablet {
+        background-image: url("./../../../assets/fonts/footer-gradient-background.png") no-repeat;
+        background-size: cover;   
+    }  
+    @include media-mobilesmall {
+        background-image: url("./../../../assets/fonts/footer-gradient-background.png") no-repeat;
+        background-size: cover;       
+    }
+   
+}
+
+.footer__wrapper {
+    max-width: 1200px;
+    padding: 0 40px;
+    padding-top: 40px;
+    @include media-tablet {
+        max-width: 708px;
+        padding: 0 30px;
+        padding-top: 30px;
+    }
+    @include media-mobilesmall {
+        max-width: 300px;
+        padding: 0 10px;
+        padding-top: 30px;
+    }
+}
+.footer__content {
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    @include media-tablet {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    @include media-mobilesmall {
+        width: 100%;
+    }
+}
+
+.icon__contact {
+    width: 278px;
+    @include media-mobilesmall {
+        display: inline-block;
+        align-items: center;
+        margin: 0 11px;
+        
+    }
+   
+}
+.contact__title {
+    @include font ($size: 3.5rem, $height: 130%, $weight: 400);
+    color: $color-light;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    @include media-tablet {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+}
+.contact__text {
+    color: $color-contact;
+    margin: 0;
+    padding-left: 20px;
+    cursor: pointer;
+    a {
+        color: $color-contact;
+    }
+    @include media-mobilesmall {
+        @include font ($size: 2.0rem, $height: 115%, $weight: 400);
+    }
+}
+
+.icon__gps {
+    width: 302px;   
+    @include media-mobilesmall {
+        width: 300px;
+    }
+}
+
+.icon__location {
+    display: flex;
+    margin-bottom: 32px;
+}
+.footer__icon {
+    display: flex;
+    margin-bottom: 40px;
+    @include media-mobilesmall {
+        margin-left: 24px;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+.footer__image {
+    @include media-tablet{     
+        margin-top: 65px;
+        text-align: center;
+        // padding-left: 204px;
+        padding-bottom: 0;
+    }
+    @include media-mobilesmall {
+        margin-top: 40px;
+        padding-left: 20px;
+    }
+}
+.puppy1__image {
+    @include media-tablet {
+        display: block;
+        max-width: 300px;
+    }
+    @include media-mobilesmall {
+        display: block;
+        max-width: 260px;
+    }
+}

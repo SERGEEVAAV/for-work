@@ -1,0 +1,91 @@
+.header {
+    
+    max-width: 1200px;
+    padding: 0 40px;
+    padding-top: 60px;
+    margin: auto;
+    @include media-tablet {
+        max-width: 708px;
+        padding: 0 30px;
+        padding-top: 30px;
+    }
+    @include  media-mobilesmall {
+        width: 300px;
+        padding: 30px 53px 0 10px;
+    }
+}
+
+.header__wrapper {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tablet {
+        width: 100%;
+        padding: 0;
+    } 
+    @include media-mobilesmall {
+        width: 100%;
+        margin: 0;
+    }
+}
+.gradient__font {
+    z-index: -5;
+    background-image: url("./../../../assets/fonts/background-mobile.png");
+}
+// .header__image {
+//     width:  100%;
+//     position: absolute;
+//     z-index: -1;
+//     height: 100%;
+    
+//     // height: 908px;
+//     @include media-tablet {
+       
+//         height: 100%;
+//         // height: 1165px;
+//     }
+//     @include media-mobilesmall {
+       
+//         height: 823px;
+    
+//     }
+    
+// } 
+.class__logo {   
+    width: 186px;
+    @include media-tablet {
+        
+    }
+    @include media-mobile {
+        z-index: 3;
+    }
+    @include media-mobilesmall {
+        z-index: 3;
+    }
+    
+}
+.logo__title {
+    @include font($size: 3.2rem, $height: 110%, $weight: 400);
+    margin: 0; 
+    letter-spacing: 0.06em;
+    @include media-mobilesmall {
+        @include font($size: 3.2rem, $height: 110%, $weight: 400);
+    }
+        
+}
+
+.style__logo {
+    text-decoration: none;
+    color: $color-logo;
+    
+}
+
+.subtitile {
+    margin: 0;
+    color: $color-subtitile;
+    @extend %font-add;
+    @include font($size: 1.3rem, $height: 1.5rem, $weight: 400);
+    letter-spacing: 0.1em;
+}

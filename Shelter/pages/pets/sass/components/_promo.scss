@@ -1,0 +1,133 @@
+.promo {
+    
+    background-color: $color-primary;
+
+}
+
+.promo__wrapper {
+    max-width: 1200px;
+    padding: 0 40px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    @include media-tablet {
+        width: 708px;
+        padding: 0 30px;
+        padding-top: 60px;
+       
+    }
+    @include media-mobile {
+        width: 394px;
+        padding: 42px 10px;
+    }
+    @include media-mobilesmall {
+        width: 300px;
+        padding: 42px 10px;
+        
+    }
+}
+.promo__content {
+    width: 100%;
+    @include  media-tablet {
+        width: 100%;   
+    }
+    @include media-mobilesmall {
+        width: 300px;
+    }  
+} 
+.promo__title{
+    max-width: 400px;
+    padding-bottom: 45px;
+    text-align: center;
+    margin: 0 auto;
+    color: $color-title;
+    letter-spacing: 0.06em;
+    @include media-tablet {
+        max-width: 400px;
+    }
+    @include media-mobile {
+        max-width: 400px;
+        
+    }
+    @include media-mobilesmall {
+        
+        max-width: 300px;
+        height: 64px;
+        
+
+    }
+
+}
+.layout-4-column {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    row-gap: 30px;
+    @include media-tablet{
+        width: 58.0rem;
+        margin: 0 64px;
+        margin-bottom: 40px;
+    }
+    @include media-mobile {
+        width: 39.4rem;
+       
+        
+    }
+    @include media-mobilesmall {
+        width: 27.0rem;
+        margin: 0 15px;
+      
+    }
+    
+}
+
+.card__animal {
+    width: 270px;
+    height: 435px;
+    background: $color-backgraund;
+    border-radius: 9px;
+    &:hover {
+        background-color: $color-change;
+        cursor: pointer;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+         .button_bordered {
+            cursor: pointer;
+            border: none;
+            background: $color-hover;
+        }
+        img {
+            background-color: $color-backgraund;;
+        }
+        
+    }
+    
+
+    
+}
+.cart__title {
+    color: $color-title;
+    text-align: center;
+    letter-spacing: 0.06em;
+    @include font($size: 2.0rem, $height: 2.3rem, $weight: 400);
+
+}
+
+.promo__button {
+    text-align: center;
+}
+article[data-id='7'], [data-id='8'] {
+    @include media-tablet {
+        display: none;
+    }
+}
+
+article[data-id='4'], [data-id='5'], [data-id='6'], [data-id='7'], [data-id='8'] {
+    @include media-mobile {
+        display: none;
+    }
+    @include media-mobilesmall {
+        display: none;
+    }
+}
