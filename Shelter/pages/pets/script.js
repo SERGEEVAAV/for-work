@@ -122,9 +122,7 @@ window.onload = function() {
     //Generate Base Modal from Modal Class
   addPromoClickHandler();
  
-  // Generate Hamburger Menu
-
-  // addHamburgerClickHandler();
+  
 }
  const renderArticlesToDom = () => {
    let strategiesWrapper = getStrategiesWrapper();
@@ -184,20 +182,7 @@ const renderModalWindow = (content) => {
   modal.buildModal(content);
 }
 
-// const addHamburgerClickHandler = () => {
-//   document.querySelector('.hamburger__navigation').addEventListener('click', () => {
-//     generateHamburgerMenu();
-//   })
-// }
 
-// function generateHamburgerMenu() {
-//   renderMenuWindow('Test content for Cards Modal');
-// }
-
-// const renderMenuWindow = (content) => {
-//   let menu = new Menu ('navigaton-nemu');
-//   menu.buildMenu(content);
-// }
  //Article
 
 class Article {
@@ -404,82 +389,6 @@ class Article {
     }
 }
 
-//Hamburger
-// class Menu {
-//   constructor (classes) {
-//       this.classes = classes;
-//       this.menu = '';
-//       this.menuContent = '';
-//       this.hamburgerCloseBtn = '';
-//       this.overlay = '';
-//    }
-
-//    buildMenu(content) {
-//     //Overlay
-//     this.overlay = this.createDomNode(this.overlay, 'div', 'overlay', 'overlay_menu');
-
-//     //Menu
-   
-//     this.menu = this.createDomNode(this.menu, 'div', 'menu', this.classes);
-
-//     //Menu content
-    
-//     this.menuContent = this.createDomNode(this.menuContent, 'div', 'menu__content');
-
-//   //close menu
-//     this.hamburgerCloseBtn = this.createDomNode(this.hamburgerCloseBtn, 'div', 'hamburger');
-
-//     this.setContent(content);
-
-//     this.appendMenuElements();
-
-//     console.log(this.menu);
-
-//      //Bind Events
-//      this.bindEvents();
-
-//      //Open Modal
-//      this.openMenu();
-//    }
-
-//       createDomNode (node, element, ...classes){
-//         node = document.createElement(element);
-//         node.classList.add(...classes);
-//         return node
-//       };
-
-//       setContent(content) {
-//         if(typeof content === 'string') {
-//             this.menuContent.innerHTML = content;
-//         } else {
-//             this.menuContent.innerHTML = '';
-//             this.menuContent.appendChild(content);
-//         }
-      
-        
-//       }
-//       appendMenuElements() {
-//         this.menu.append(this.hamburgerCloseBtn);
-//         this.menu.append(this.menuContent);
-//         this.overlay.append(this.menu);
-//     }
-
-//     bindEvents()  {
-//         this.hamburgerCloseBtn.addEventListener('click', this.closeMenu);
-//         this.overlay.addEventListener('click', this.closeMenu);
-//     }
-//     openMenu() {
-//         document.body.append(this.overlay);
-//     }
-
-//     closeModal(e) {
-//       let classes = e.target.classList;
-//       if(classes.contains('overlay') || classes.contains('hamburger')) {
-//           document.querySelector('.overlay').remove();
-//       } 
-  
-//     }
-// }
 
 
 

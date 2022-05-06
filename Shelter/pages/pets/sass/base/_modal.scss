@@ -25,7 +25,10 @@
     @include media-tablet {
         width: 90%;
     }
-
+    @include media-mobile {
+        padding: 10px;
+        max-width: 240px;
+    }
     @include media-mobilesmall {
         padding: 10px;
         max-width: 240px;
@@ -58,6 +61,9 @@
         width: 350px;
         height: 350px;
         @include media-mobilesmall {
+            display: none;
+        }
+        @include media-mobile {
             display: none;
         }
     }
