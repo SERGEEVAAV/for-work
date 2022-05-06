@@ -25,7 +25,9 @@
     @include media-tablet {
         width: 90%;
     }
-
+    @include  media-mobile {
+        max-width: 240px;
+    }
     @include media-mobilesmall {
         padding: 10px;
         max-width: 240px;
@@ -57,6 +59,11 @@
     .card__image {
         width: 350px;
         height: 350px;
+        @include media-mobile {
+            display: none;
+        }
+           
+        
         @include media-mobilesmall {
             display: none;
         }
@@ -76,6 +83,9 @@
         color: $color-marker;
         content: "▪"; /* Сам маркер */
         padding-right: 10px;
+    }
+    @include media-mobile {
+        display: block;
     }
     @include media-mobilesmall {
         

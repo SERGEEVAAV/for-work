@@ -33,15 +33,19 @@
             
         }
     }
+    @include media-tablet {
+        margin-bottom: 40px;
+        @include font ($size: 3.2rem, $height: 160%, $weight: 400);
+    }
+    @include media-mobile {
+        margin-bottom: 40px;
+        @include font ($size: 3.2rem, $height: 160%, $weight: 400);
+    }
     @include media-mobilesmall {
         margin-bottom: 40px;
-        // font-size: 3.2rem;
         font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 160%;
     }
+        
 }
 .navigation__link a {
     text-decoration: none;

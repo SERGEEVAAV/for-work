@@ -4,7 +4,7 @@
     background: $color-backgraund;
 }
 .card__wrapper {
-    max-width: 120.0rem;
+    max-width: 1200px;
     padding: 0 40px;
     padding-top: 80px;
     padding-bottom: 100px;
@@ -13,6 +13,10 @@
         padding: 0 30px;
         padding-top: 80px;
         padding-bottom: 100px;
+    }
+    @include media-mobile {
+        max-width: 300px;
+        padding: 42px 10px;
     }
     @include media-mobilesmall {
         max-width: 300px;
@@ -26,6 +30,10 @@
         width: 708px;
         margin: 0;
     }
+    @include media-mobile {
+        width: 300px;
+        margin: 0;
+    }
     @include media-mobilesmall {
         width: 300px;
         margin: 0;
@@ -33,7 +41,6 @@
 }
 .card__title{
     width: 40%;
-    // text-align: center;
     @include font($size: 3.5rem, $height: 130%, $weight: 400);
     padding-bottom: 60px;
     text-align: center;
@@ -43,13 +50,18 @@
     letter-spacing: 0.06em;
     @include media-tablet {
         width: 40.0rem;
-        // text-align: center;
         padding: 0;
         margin: 0 154px 60px 154px;
     }
+    @include media-mobile {
+        width: 30.0rem;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 42px;
+        @include font ($size: 2.5rem, $height: 130%, $weight: 400);
+    }
     @include media-mobilesmall {
         width: 30.0rem;
-        // text-align: center;
         padding: 0;
         margin: 0;
         margin-bottom: 42px;

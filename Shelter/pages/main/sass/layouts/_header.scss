@@ -1,23 +1,22 @@
 .header {
-    width: 93.75%;
-    // width: 1200px;
+    
+    max-width: 1200px;
     padding: 0 40px;
     padding-top: 60px;
     margin: auto;
     @include media-tablet {
-        width: 92.18%;
-        // width: 708px;
+        max-width: 708px;
         padding: 0 30px;
         padding-top: 30px;
     }
     @include  media-mobilesmall {
-        width: 93.75%;
-        // width: 300px;
+        width: 300px;
         padding: 30px 53px 0 10px;
     }
 }
 
 .header__wrapper {
+    
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -58,6 +57,9 @@
     width: 186px;
     @include media-tablet {
         
+    }
+    @include media-mobile {
+        z-index: 3;
     }
     @include media-mobilesmall {
         z-index: 3;
