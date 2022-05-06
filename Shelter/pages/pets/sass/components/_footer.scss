@@ -20,6 +20,11 @@
     @include media-tablet {
         width: 708px;
     }
+    @include media-mobile {
+        width: 300px;
+        padding: 0 10px;
+        padding-top: 30px;
+    }
     @include media-mobilesmall {
         width: 300px;
         padding: 0 10px;
@@ -92,6 +97,10 @@ a {
     @include media-tablet{
         margin-top: 65px;
         margin-left: 204px;
+    }
+    @include media-mobile {
+        margin-top: 40px;
+        margin-left: 20px;
     }
     @include media-mobilesmall {
         margin-top: 40px;

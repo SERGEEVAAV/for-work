@@ -20,6 +20,9 @@ h1{
 h2 {
     
     @include font ($size: 3.5rem, $height: 130%, $weight: 400);
+    @include media-mobile {
+        @include font ($size: 2.5rem, $height: 130%, $weight: 400);
+    }
     @include media-mobilesmall {
         @include font ($size: 2.5rem, $height: 130%, $weight: 400);
 
@@ -33,6 +36,9 @@ h3 {
 li {
     @extend %font-add;
     @include font ($size: 1.5rem, $height: 160%, $weight: 400);
+    @include media-mobile {
+        @include font ($size: 3.2rem, $height: 160%, $weight: 400);
+    }
     @include media-mobilesmall {
         @include font ($size: 3.2rem, $height: 160%, $weight: 400);
     }
