@@ -1,11 +1,11 @@
 .wrapper {
     margin: 0 auto;
     @include media-tablet {
-        overflow-x:hidden;
+       
         // padding: 0 30px;
     }
     @include media-mobilesmall {
-        overflow-x:hidden;
+       
         // padding: 0 10px;
         
     }

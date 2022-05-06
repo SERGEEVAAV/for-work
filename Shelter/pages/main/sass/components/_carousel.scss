@@ -2,6 +2,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+    @include media-tablet {
+        flex-wrap: wrap; 
+    }
+    @include media-mobile {
+        flex-wrap: wrap; 
+    }
     @include media-mobilesmall {    
       flex-wrap: wrap; 
     }
@@ -19,6 +25,13 @@
     @include media-tablet {
         max-width: 580px;
         overflow: hidden;
+       
+    }
+    @include  media-mobile {
+        max-width: 300px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        order: -1;
     }
     @include media-mobilesmall {
         max-width: 270px;
@@ -38,6 +51,9 @@
     @include media-tablet {
         left: -620px;
         gap: 40px;
+    }
+    @include media-mobile {
+        left: -300px;
     }
     @include media-mobilesmall {
         left: -300px;
